@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador de Texto</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Codificador">
+            <textarea 
+            name="texto" 
+            class="texto" 
+            id="texto" 
+            cols="30" 
+            rows="10" 
+            placeholder="Digite ou envie uma mensagem aqui."
+            ></textarea>
+        </div>
+        <div class="termos">
+            <p>Somente letras minúsculas e sem acentos.</p>
+        </div>
+        <div class="botões">
+            <button class="btn-Codificar" type="button" onclick="Codificar()">
+                Codificar 
+            </button>
+            <input 
+            type="button" 
+            class="btn-Decodificar" 
+            value="Decodificar" 
+            onclick="Decodificar()"
+            />
+        </div>
+    </div>
+    <div class="Codificar">
+        <img src="assets/boneco.png" alt="" id="boneco">
+        <div class="mensagem-codificada" id="mensagem-codificada">
+            <h2 id="título-mensagem"> Nenhuma mensagem foi encontrada</h2>
+            <p id="parágrafo">
+                Digite o texto que deseja criptografar ou descriptografar
+                </p>
+                <!-- <textarea 
+                name="mensagem" 
+                id="mensagem" 
+                cols="30" 
+                rows="10" 
+                class="mensagem"
+                ></textarea> -->
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
